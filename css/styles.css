@@ -1,0 +1,132 @@
+body {
+    background-color: #85a5d4;
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+}
+
+.container-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #fff;
+    margin-top: 15vh;
+    border-radius: 8px;
+    padding: 2.5vh 2vh;
+    min-height: 350px;
+    height: 40vh;
+    width:1200px;
+
+}
+
+img {
+    height:14vh;
+    min-height:100px;
+}
+.item {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    transition: background-color .30s ease;
+}
+
+.item h2 {
+    color: #5872d6;
+    font-size: 25px;
+    letter-spacing:3px;
+}
+
+.item h3{
+    color: #5872d6;
+    font-size: 35px;
+    display: inline;
+}
+
+.item p {
+    color: #9d9c9f;
+    line-height:1.75;
+    padding: 0px 65px;
+}
+
+span{
+    color: #5872d6;
+    font-size: 17px;
+}
+
+.content h2:nth-child(3){
+    letter-spacing:normal;
+}
+
+a:hover {
+    background-color: #f6f6f6;
+    cursor:pointer;
+}
+
+
+@media screen and (max-width : 1200px){
+
+    .container-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        height: 850px;
+        width:400px;
+    }
+
+    img {
+        height:10vh;
+    }
+
+    .item h2 {
+        font-size: 20px;
+        letter-spacing:2px;
+    }
+    
+    .item h3{
+        font-size: 25px;
+    }
+    
+    .item p {
+        line-height:1.5;
+        padding: 0px 15px;
+    }
+    
+    span{
+        font-size: 14px;
+    }    
+
+}
+
+@media screen and (max-width : 500px){
+
+    .container-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: #fff;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        padding: 1.5vh 1vh;
+        height: 900px;
+        width: 30vh;
+    }
+   
+    .item h3{
+        font-size: 20px;
+    }
+    
+    .item p {
+        line-height:1.4;
+        padding: 0px 10px;
+    }
+
+}
