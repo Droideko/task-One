@@ -11,7 +11,7 @@ body {
 .container {
     min-height: 100vh;
     position: relative;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .container-content {
